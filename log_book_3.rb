@@ -186,13 +186,23 @@ require 'time'
         exit
     end
 
+    def add_pushups
+      puts "How many this time?"
+      num = gets.to_i
+      push_up_total = File.open("total_pushups.txt", "r")
+      new_total = push_up_total.gets.to_i + num
+        push_up_total.close
+        File.write("total_pushups.txt", new_total)
+      puts "Roger that- #{num} logged. You new total #{new_total}!"
+    end
+
 
     def main_menu(stack, in_and_out, time_in, total_time, log_book, idea_file)
 
         puts "     === === ===== = ======= ==== === ===== === == ==== = == =="
         puts "  ==== ==== ===== === ==== LOG BOOK 3 == = == == === =========== ====="
         puts "===== == ======= === ==== == ===== ========= ===== ===== ======= ="
-        puts "          IN (3) | OUT (5) | LOG (8) | STACK (9) | IDEAS (0)"
+        puts "       IN (3) | OUT (5) | LOG (8) | STACK (9) | IDEAS (0) | UPS (6)"
         puts "  = == ========= =========== == == ==== ============= ===== === = ===="
         puts "======== =============== ======== = = ====== ===== == ======== ========== =="
 
@@ -205,6 +215,8 @@ require 'time'
           clock_in(time_in, in_and_out)
         when 5
           clock_out(in_and_out, time_in, total_time)
+        when 6
+          add_pushups
         when 8
           log(log_book)
         when 9

@@ -193,7 +193,7 @@ require 'time'
       new_total = push_up_total.gets.to_i + num
         push_up_total.close
         File.write("total_pushups.txt", new_total)
-      puts "Roger that- #{num} logged. You new total #{new_total}!"
+      puts "Roger that- #{num} logged. You new total #{new_total}(since June 5th, 2020)!"
     end
 
 

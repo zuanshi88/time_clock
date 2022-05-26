@@ -18,13 +18,13 @@ require 'time'
 #@time_log is for my wholesale importing, editing and then writing procedure.
 #@total time is going to keep track of the total about studied.
 
-  def clock_in(time_in, in_and_out)
+  def clock_in(time_in, in_and_out, type)
     #write the new log in time to the "in and out file"
     #now writing it so the new additions go to the top of the file using "unshift"
     time = Time.now
-    time_in = File.write(time_in, time )
+    time_in = File.write(time_in, time)
 
-    new_log = "IN: #{time.strftime("%m/%d")} @ #{time.strftime("%H:%M")}"
+    new_log = "#{type}IN: #{time.strftime("%m/%d")} @ #{time.strftime("%H:%M")}"
     log_read = File.open(in_and_out, "r")
     log_line_array = create_file_array(log_read)
     #using #unshift to enter new log at the log of the page
@@ -33,38 +33,54 @@ require 'time'
     log_write.puts updated_log_book
     log_write.close
     #write clock in time to temporary "time-in file for retrievel later.
-      puts "#{time.strftime("%m/%d/%Y")}: IN #{time.strftime("%H:%M")}"
+      puts ""
+      puts "          #{time.strftime("%m/%d/%Y")}:  #{type} IN  (#{time.strftime("%H:%M")})"
   end
 
 
-  def clock_out(in_and_out, time_in, total_time)
+  def clock_out(in_and_out, time_in, total_time, type)
     time = Time.new
     total_time_read = File.open(total_time, "r")
     total_time_for_calc =  total_time_read.gets.to_f
     total_time_read.close
 
-    new_log = "OUT: #{time.strftime("%m/%d")} @ #{time.strftime("%H:%M")}: #{total_time_for_calc}"
-    #recall the full log and set it up to add new clock out to top of file.
-    log_line_array = create_file_array(in_and_out)
-    updated_log_book = log_line_array.unshift(new_log)
-    log_write = File.open(in_and_out, "w")
-    log_write.puts updated_log_book
     #do File.write FILE objects need to be closed?
     time_in_read = File.open(time_in,"r")
     time_in = time_in_read.gets
     time_in_for_calc = Time.parse(time_in)
       time_in_read.close
     session_elapsed_time = (time.to_f.round(2) - time_in_for_calc.to_f.round(2))/3600
-
     new_total_time = session_elapsed_time + total_time_for_calc
+
+    new_log = "#{type} OUT: #{time.strftime("%m/%d")} @ #{time.strftime("%H:%M")}: #{new_total_time}"
+    #recall the full log and set it up to add new clock out to top of file.
+    log_line_array = create_file_array(in_and_out)
+    updated_log_book = log_line_array.unshift(new_log)
+    log_write = File.open(in_and_out, "w")
+    log_write.puts updated_log_book
+
     total_time_write = File.open(total_time, "w")
     total_time_write.puts new_total_time
     total_time_write.close
+      puts ""
+      puts "                      -=-=-=-=-=-=-=-=-"
+      puts "                    session #{type} complete"
+      puts "                    -=-=-=-=-=-=-=-=-=-=-"
+      puts "  "
+      puts "                         " + time.strftime("%m/%d/%Y")
+      puts "  "
+      puts "                          #{session_elapsed_time.round(2)} hrs."
+      puts "  "
+      puts "                  IN (" + time_in_for_calc.strftime("%H:%M") + ") | OUT (" + time.strftime("%H:%M") + ")"
+      puts "                   "
+      puts "                         [ #{new_total_time.round(2)} ]"
+      puts "                "
+      puts "                          =-=-=-="
+      puts "                            =-=-"
+      puts "                             =-"
 
-      puts "IN: " + time_in_for_calc.strftime("%H:%M")
-      puts "OUT: " + time.strftime("%H:%M")
-      puts "#{session_elapsed_time.round(2)} hours logged."
-      puts "#{new_total_time.round(2)} total. Run, Code, Run!!!"
+
+      puts ""
   end
 
   def log(log_book)
@@ -197,14 +213,15 @@ require 'time'
     end
 
 
-    def main_menu(stack, in_and_out, time_in, total_time, log_book, idea_file)
+    def main_menu(stack, in_and_out, time_in, total_time, log_book, idea_file, write_in, write_total_time, write_in_and_out)
 
-        puts "     === === ===== = ======= ==== === ===== === == ==== = == =="
-        puts "  ==== ==== ===== === ==== LOG BOOK 3 == = == == === =========== ====="
-        puts "===== == ======= === ==== == ===== ========= ===== ===== ======= ="
-        puts "       IN (3) | OUT (5) | LOG (8) | STACK (9) | IDEAS (0) | UPS (6)"
+        puts "  ==== === =   === === ===== = ======= ==== === ===== === == ==== = == =="
+        puts "   ===  ==== ==== ===== === ==== LOG BOOK 3 == = == == === =========== ====="
+        puts "  =  ==  ===== == ======= === ==== == ===== ========= ===== ===== ======= ="
+        puts "IN (3) | OUT (5) | WRITE-IN (6) | WRITE-OUT (7) | LOG (8) | STACK (9) | IDEAS (0)"
         puts "  = == ========= =========== == == ==== ============= ===== === = ===="
-        puts "======== =============== ======== = = ====== ===== == ======== ========== =="
+        puts "  ======== =============== ======== = = ====== ===== == ======== ========== =="
+        puts "   === ===== == = = = ===== === ===== === == == = == ===== == === === === =="
 
       count = 0
 
@@ -212,11 +229,15 @@ require 'time'
 
         case action
         when 3
-          clock_in(time_in, in_and_out)
-        when 5
-          clock_out(in_and_out, time_in, total_time)
-        when 6
+          clock_in(time_in, in_and_out, type = "CODING" )
+        when 4
           add_pushups
+        when 5
+          clock_out(in_and_out, time_in, total_time, type = "CODING")
+        when 6
+          clock_in(write_in, write_in_and_out, type = "WRITE")
+        when 7
+          clock_out(write_in_and_out, write_in, write_total_time, type = "WRITING")
         when 8
           log(log_book)
         when 9
@@ -225,15 +246,14 @@ require 'time'
           ideas(idea_file)
         when 2
           puts "Welcome to your vocation."
-        when 4
-          puts "We having fun yet?"
         else
           puts "What now?"
         end
 
       end
 
-  main_menu(stack = "stack.txt", in_and_out = "in_and_out", time_in = "time_in", total_time = "total_time", log_book = "log_book", idea_file = "ideas.txt")
+  main_menu(stack = "stack.txt", in_and_out = "in_and_out", time_in = "time_in", total_time = "total_time",
+    log_book = "log_book", idea_file = "ideas.txt", write_in = "write_in.txt", write_total_time = "write_total_time.txt", write_in_and_out = "write_in_and_out.txt")
 
 #action.to_i == 8 ? my_time_clock.clock_in : my_time_clock.clock_out
 

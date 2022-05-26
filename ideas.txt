@@ -1,0 +1,86 @@
+06/14 10:03: 
+ 02/20 18:10: 5
+ 02/01 09:55: 6
+ 01/29 14:06: FOCUSING ON RAILS FEB 2021
+ 01/29 14:06: 6
+ 12/19 14:26: 7
+ 11/24 20:58: 
+ 10/14 17:03: 8
+ 10/10 11:46: 3
+ 09/14 09:35: 3
+ 08/11 09:59: 
+ 08/03 12:36: 
+ 07/22 09:55: Hackable Study sheets: just put your notes in and you have an interactive review and sharing system
+ 06/26 14:04: 8
+ 06/20 14:55: American guy hacking his way through a computer blog in Mandarin following a course directed by Tarot cards
+ 06/20 14:54: coding blog persona- Yooper Guy
+ 06/19 16:17: Everybody Cares, Evderybody Understands- Elliot Smith...
+ 06/19 06:59: Digital component to Esme's penpalling... oooohhh, use a map and have a geography tie in.
+ 06/19 06:56: web based study portfolio.
+ 06/19 06:53: Learn digital tools quickly and with panache!
+ 06/19 06:52: A digital gallery for Meimei and Helena.
+ 06/19 06:51: 0
+ 06/19 06:50: Binary rhythm, uniary haze. 
+ 06/18 10:38: Language Learner/language tracking platform
+ 06/18 10:36: Two number KPI: hours_coding & pushups
+ 06/18 07:58: Feeling a little overwhelmed by GITHUB at the moment.  it is a road block.  This time tomorrow...
+ 06/17 11:20: "Being able to iterate on what you've done is actually a better indicator of you aptitude than your initial code.
+ 06/17 11:20: prcatice talking about your code
+ 06/17 10:58: Do a Graphic Design Course
+ 06/17 10:25: Check out a Tableau introductory video
+ 06/15 14:29: How can I make my log more object oriented?
+ 06/15 14:27: Madlib project with Esme and Owen in mind.  
+ 06/15 08:41: Is there an extension to print Chinese Characters in command prompt?
+ 06/12 06:15: A USEFUL comment explains why not what
+ 06/12 06:14: Tech Connects: Lucas, Peterson, Sten Anderston, David Oliver, John (Amy's husband), Micah, Aaron (Micah's Friend), David Eads.
+ 06/12 06:12: Face-First movement- roving social workers who engage people and can connect them with relavent organizations. 
+ 06/11 16:23: That's so funny.. of course it doens't have a superclass or ancestors... it's a Struct!!!
+ 06/11 15:05: I had decided and I sat before an open window with the wind crowding in and butting up against me like a big friendly canine.
+ 06/10 21:38: What is up with that bug going from STACK into IDEAS?
+ 06/10 17:17: I want to objectify the log_book_1000
+ 06/10 14:12: Add a daily_do feature to log_book with task_alerts, goal_alerts, connection calendar.
+ 06/09 10:33: Explore Scope more!
+ 06/09 08:31: 
+ 06/08 17:27: Could I run my own server?
+ 06/08 17:25: Fillable survey to send out to family and then compile the results
+ 06/08 17:25: APP idea: Meterpen
+ 06/08 14:34: Big names in programming: Flannagan, Crockford
+ 06/08 14:20: Tech portfolio.
+ 06/08 14:19: RPG style story game to explore coding techniques. 
+ 06/08 14:16: Interactive Photography website.  Embedding the diffent parts of the website in the image.
+ 06/08 14:15: Extensions: access lists via text messaging.  saves input in a single, easy to retrieve document(good for quick notes)
+ 06/08 14:14: Extensions: Turn Outlook into a full CRM
+ 06/08 13:40: Don't do a code camp.  Code and learn like crazy through the summer.  Reassess ahead of the September 21st deadlines.  
+ 06/08 07:16: Happy to report, the exit route worked.  If I get a chance to chat with Micah about this program i should as him about that. Weird, no?
+ 06/08 07:16: Ended up trying the "Exit" route here.
+ 06/08 07:13: Did this plug my leaky hole?
+ 06/08 07:09: I have a desire to build things and to use my mind... there is nothing wrong with that.
+ 06/08 07:02: start some kind of website
+ 06/07 22:22: This is how an idea comes together
+ 06/07 22:19: this is also a test
+ 06/07 22:19: This is a test
+ 06/07 22:12: We did it again!
+ 06/07 22:12: Okay... we did it!
+ 06/07 22:09: Did that do if!?!
+ 06/07 22:09:  06/07 22:04: Is the idea file working?
+ 06/07 16:56:
+ 06/07 16:55:
+ 06/07 15:27: Hopefully polishing up this code and generalizing it a bit will get me to a new plateau
+ 06/07 10:44:  06/07 10:21:  06/07 09:07:  06/07 08:32: What is my hesitation with using the term studying?  I am studying!!! And it is wonderful!
+ 06/07 08:31: I should read up on Algorithms.
+ 06/07 08:31: Just returned to the Main menu from teh Stack sub menu and go a kick out of how smoothly that all went.
+ 06/07 07:03: Three Questions: Pass, Pause, Release
+ 06/07 07:02: Do I need to get a MacBook?
+ 06/07 06:51: RESEARCH TOPIC- alternative file saving display structures (the back end wouldn't really have to be much different than it is now... perhaps just a bit more hyperlinked, but that's probably okay because of the speed of our processors, no?
+ 06/07 06:41: APP IDEA: TOPIC- It literally organizes your thoughts for you. Suggests a few basic file organizing structures.  And secure saving and accessibility options.  Primmary for tablets. This could be the base of the mind mapping idea I had a few years ago. This could just be a file managing system.  Very basic.  Central hub. Touched (button can be set to differnt sound, visual/tactile interaction levels) central hub reveals spoking out sub hubs which can then be touched to reveal their subhubs.  From within each hub and subhub the user would have the ability to create and store and array of document types and weblinks. Ideal for kids and senior to easier access key documents, programs, projects and media storage.
+ 06/07 06:38: nd the Low Saddle Pass has me thinking of the Southwest and dry air and scrub soil. And a gushing roar on up ahead.
+ 06/07 06:38: But the wait between the first and last, is muc less Grand than the Low Saddle Pass.
+ 06/07 06:37: There is a repetition to the pause between the lines.
+ 06/07 06:37: There is kind of a great level of privacy with typing this way.
+ 06/06 15:44: File under "k"... still going to ideas, but changed "else" in code conditional to "String" from return.
+ 06/06 15:40: File under 'n': inputing 'n' got me to ideas which is assigned to 0
+ 06/06 15:37: Does this go to zero because it has no meaning? If this does go to ideas that is really fascination... unless, did I code ideas as "else"?
+ 06/06 15:36: 3
+ 06/05 21:54: Let's make banana bread in the morning.
+ 06/05 16:48: Is there such a thing as a self_hating narcissist?
+ 06/05 16:47: Maybe I'm what's wrong with American.

@@ -1,0 +1,171 @@
+12/29 11:51: Nashville- working Ruby in the home office. Sunny and 50 today here between 2020 and 2021... 2020.5?
+ 12/07 13:52: My body has been feeling really good (especially compared to this summer) and my writing is going better than ever, my typing is feelign better than ever \n Does this create a new line? \n It would be cool if it did!
+ 12/07 13:51: Kind of forgot how cool LOG is... I should use it more for quick ideas.
+ 12/07 13:50: whoops, didn't mean to do that
+ 09/08 08:45: How may different logs/notbooks have I started during this process?
+ 09/01 10:10: Big day. symbolic day.  I am looking ahead to a 14 day run of sobriety and focused work.
+ 07/22 06:48: NEW SEASON!
+ 07/20 15:22: Caught by a Library Path issue with Arduino...
+ 07/15 21:34: Have been on the road and out of the formative habits.  Slowly sliding back that way.
+ 07/07 10:06: Feeling back at the bottom of the hill as far as momentum goes... let's get going!
+ 07/07 10:05: At this moment (after suffering on drive to UP 7/1) My neck and shoulder feels the best it has in a while!!
+ 06/30 13:22: Hustling my way through Ruby, Javascript, CSS, HTML, git, GitHub to do so...
+ 06/30 13:21: At this point I am really eager to get deeper into OO desgin, Agile, and Rails...
+ 06/30 13:21: Damn... my back remains uncomfortable!
+ 06/29 09:03: I am coming into myself.  And that is a very good thing for myself and even more importantly- my family.
+ 06/29 09:03: With my digital knowledge accruing and my enthusiasm unfurling.
+ 06/29 09:02: With two yellow notebooks in front of me- one to kill, one to fill.
+ 06/28 05:20: building out curriculum website. working on feedback notetaking loop. should google notetaking html schemes.
+ 06/26 14:05: Still doing that weird bug with the STACK LIST showing up at weird times.
+ 06/26 12:10: HTML/DevCurriculum Project/Yellow Submarine
+ 06/23 13:25: Worked on Thinking Mathematically and then transitioned to HTML focus Yellow Sub work
+ 06/23 13:24: The Buzz of Learning something new.
+ 06/22 14:51: making great headway on pushups.  Should write push counter.
+ 06/22 14:50: Review git, html (started html based notebook), algorithmic thinking
+ 06/20 10:20: worked on first coding interview algorithm (clock hand angle calculation from 'Cracking the Coding Interview'- really enjoyed it!
+ 06/19 16:17: Still working through yellow notebook.  I am diving in and then climbing to the top.  Just have to keep the time coming!!
+ 06/19 13:31: working on my yellow submarine... cycling back through material to consolodate learning.
+ 06/19 11:10: working through notes and integrating learning.  Bash has been coming up a lot.  Would like to spend a bit more time with it specifically.  Knock out one notebook and get through a bit more of the rails videos.
+ 06/17 17:20: Made it through the whole web trends video.  Took lots of notes.  Still need to finish Git intro.
+ 06/17 07:40: "Song of the Open Road," Walt Wittman
+ 06/16 16:55: Hour intro to HTML from Traversy Media
+ 06/16 13:52: We all live in a Yellow Submarine
+ 06/15 06:47: Works seems like the answer.  500-1500 hours are needed to become fluent in a programming language.
+ 06/15 06:46: 8
+ 06/15 06:45: Feels good to be bacck to coding.  Emotionally I have been up and down about it.
+ 06/15 06:44: Just back from Ypsilanti to visit Adam and Beth and Mom and Dad. And attend aunt Debbie's memorial.
+ 06/12 06:11: Shower stoner, Tarot, Jewelry, Watches, description of selling, of U-Haul truck plowing into us, need to find the driver
+ 06/11 16:24: You can be happy now.  You have found your Eagle Harbor.
+ 06/11 15:08: Feeling something of the Eagle Harbor in the breeze through the window, all the summer opening up around us.
+ 06/11 15:06: We are in control of our own personal narrative.  The national narrative, the global narrative, the universal narrative- what of these, but foreign films for our amusement.
+ 06/11 11:10: Spoke with Fabiola this morning and made my position clear about returning to work
+ 06/10 21:36: Back at it... relax and just do it.
+ 06/10 17:16: Just refactored the selection menu from an if/elsif construction to a case/when construction.  The case when is so much cleaner!  I dig it
+ 06/10 16:59: It might not be enough but it won't matter all that much.
+ 06/10 16:59: If you are doing what you love, the money will come.
+ 06/10 13:47: Put your mind in neutral... suspend your disbelief... be, observe, live.
+ 06/10 13:20: Nor exlained the timeline or conditions that I will be returning to.
+ 06/10 13:19: Am I being unprincipled by staying on unemployment... no, because no one has asked me to come off of it
+ 06/09 21:40: Slow the fuck down on the weed intake, eh?
+ 06/09 08:31: Or at least take the time to make the experiment with a reasonable fall back plan if the momentum shifted.
+ 06/09 08:31: Forego bootcamp?
+ 06/09 08:29: @ 133 momentum grows, anticaption of learning and growth inspires.
+ 06/09 08:28: Okay, that didn't work, but I feel like I have taken another good step forward
+ 06/09 08:26: /t Can I escape characters in this journal? /n That would be really fucking awesome if I could!/n
+ 06/08 14:34: I have a new JavaScript book and I am feeling fond of the future.
+ 06/08 14:32: Note from 5/29/2020- Stoned, out of work, sunny day, fresh coffee, baby napping. Wife daughter on-line preschool
+ 06/08 14:13: Thinking about about using log for everything else and IDEAS just for Tech related topics.
+ 06/08 12:53: Worked on some Ruby with Boris and then did some contact management. Also Certified
+ 06/08 11:57: Certified the previous two weeks.  My next certification date will be the 22nd
+ 06/08 10:24: Spent the morning thus far researching technologies and beginning my big Excel glossary. Not smoking today and I feel good.
+ 06/08 06:59: Waking up today to finally getting on the ides trajectory.  Humble yourself. Love.
+ 06/07 22:10: This seems to have finished it up!! Refactor complete?
+ 06/07 22:05: This shit is getting ridiculous...
+ 06/07 21:50: This is another useless log just to make sure this program is running as it should be
+ 06/07 21:39: Good... we are on the home stretch now!
+ 06/07 21:33: The refactoring of this program is getting a bit old, but I think totally worth it.  Its much more programmy after this integration.
+ 06/07 17:54: Is this working again.  I just reconfigured some of the code to generalize the files that I am using to save the date.
+ 06/07 15:27: Just checking to see if the other options are functioning?
+ 06/06 15:52: Chuckling to myself on a beautiful Saturday afternoon in which I am working on purpose... inside. The Birkey's, including Aunt Linda visited from late-morning to early afternoon.  Helena charmed and cuddled. Esme chatted, sang Karaoke, and regaled. Arlan and I did a Jimmy's Pizza Cafe run with our masks on for business.  Just a gorgeous day.  The big front tree breezes in towards the window in all her June new leaf splendor.
+ 06/06 06:48: Something is off with the in_and_out file.  The rest of the program seems to be working well though.  The birkey's are een route from Ft. Wayne for a day visit.  They are bringing the crib with them
+ 06/05 22:00: The night falls soft around us.  And we breath the air of the fallen angels. Buddhist monks in priestly garb breath languidly in the night.  Forsooth my harold of ivory.  My Bandicoot wench.  My sly pantry mouse. My marigold splint.
+ 06/05 16:26: Logged out and then logged right back in because I feel like I can justify taking credit for the time that I wasn't just programming based on the fact that I did some reading last night in the PM that I didn't record. I'll be liberal on this front, but the most important this is ridiculous numbers.  If your numbers are ridiculous then you must be doing something right... even if they are a little padded here and there...
+ 06/05 15:21: So where are we exactly?  I don't know.  I think it is a good place, though I haven't explored every nook and crany of this place.  I haven't lived all the way through this moment.  I like the aesthetics of this page.  I like the black space and seeing words emerge on a screen white against the darkness.
+ 06/05 08:30: This shit is getting crazy!!
+ 06/05 08:13: This seems to be working.  Very pleased with how the refactoring of this program is going.  It seems silly to be spendin so much time on it, but it feels important since it is giving me a really practical, tangible project to apply the concepts that I am learning.
+ 06/05 07:15: Okay, maybe it hasn't saved yet or something... or wait... no, I think that is right, I just have it wrong on the menu hhere.
+ 06/05 07:11: Interesting... something was going wrong with the all else option there.  It was returning to OUT for the catch all character design and I was unable to access LOG.  After swapping the switches of these two functions though I have been able to access LOG through the "6" swtich.  Why is the catchall piping to OUT? though.  OUT is set to the 0 switch...
+ 16:01:  15:47:  15:26:  06/04 08:54:  06/04 08:53:  06/04 08:40: This should be the same path set up, but with differnt formating on some of the input.
+ 06/04 08:39:  08:35: I haven't noticed if the formating is substantially different since I changed the method of adding the new text as a string concatenation move as opposed to an Array .unshift.
+ 08:31:  08:31:  08:27:  07:47:  07:16: "Surfer's Hymn" PandaBear is hitting just right right now.
+ 07:01: combating digital dislocation...suffering through the shit the follows the wanton feast.
+ 06:47: But with more features. I should make a module for the redirecting of IO to the beginning of the array.  I should look at that again.  I feel like up to this point that is some of the best coding that I have done.  I would definitely look forward to more such moments.
+ 06:46: THe command prompt control panel... it must exist.  I'm imagining something very similar to Journal 2000.
+ 16:36: Worked on Ruby Koans... found some PHP koans...Thought about making a MADLIB game for Esme, Want to consolodate address books, keep getting better at looking into settings and configurations.  I am the configurator.
+ 15:27: Definitely getting into it!
+ 15:25: That is a pretty cool sequence of keyboard short cuts.  It feels good to be getting into files with such ease and confidence.  I like this environment.  My white journal is kind of sober... There is something calming about the black backgorand the white font.  It may help that I had a quarter brownie
+ 15:25: this is suppose to the a special day
+ 15:24: Just jump into a topic.  Try to get somewhere in 10-15 minutes and if you gain traction- fantastic, if not, move on
+ 12:57: Thinking about more functionalities to add.  Also could do something with the interface.
+ 12:53: Made another declaration to betsy regarding my enthusiasm for coding.  I need to fucking do the work now.
+ 11:16: I'll admit that is a little bit dramatic. But what if this was the way to embrace the cliche of taking the risk to make an opportunity ... I'd like to think it is.
+ 11:15: So here we are at the beginning of another coding session.  We had a somewhat productive morning- up early for a morning session.  Am I a psychotic person for just digging in and focusing on my career right now while the city burns all arouaround
+ 15:31:  15:22:  15:20:  15:16: Thus far today: log_book_3000 is up and running, Boris up to 247/260 (nearly finished!), looked into local coding schools
+ 11:38: Are my controls still accurate?
+ 11:32: Wanted to see if I took care of that goddamned n/character that I erroneously added.
+11:32: Wanted to see the log
+11:30: I wonder if I could really make money doing this!!
+/n11:30: This is the life, man!
+/n11:30: Have to add a few more just to be sure!
+/n11:29:
+/n11:28: Holy Shit... did I do it!?!... What did I just do to make this work???
+/n11:27: This is the test... I had those two files open and that was doing something that I don't totally understand
+/nThis is WHAT happens now!!
+/n2020-05-28 08:18:51 -0500
+Now can I do it?
+2020-05-28 08:19:22 -0500
+it didn't print the time, how odd?
+2020-05-28 08:21:08 -0500
+How whas that?
+2020-05-28 08:21:24 -0500
+Huh? that actially dod it!
+2020-05-28 17:53:58 -0500
+need to change the settings to always be administator view
+2020-05-28 17:54:30 -0500
+I should do some review of the time object in Ruby
+2020-05-28 18:05:31 -0500
+put Make Stack in my Stack
+2020-05-28 18:06:42 -0500
+make the object in another file!!!!!
+2020-05-29 05:11:57 -0500
+Up early and getting in a groove with this computer thing.  My the eloqunece of the morning.
+2020-05-29 05:13:35 -0500
+This style of work and these tools are totally my speed.
+2020-05-29 05:13:54 -0500
+I believe my ego has stood in my way of learning them earlier.
+2020-05-29 10:22:24 -0500
+Now I have it in place.  I keep running into these little issues and then working to fix them... Are these issues finally fixed?
+2020-05-29 10:52:00 -0500
+Fuck!Fuck!Fuck! This is like a minor existential crisis not being able to run atom...
+2020-05-29 10:52:16 -0500
+going to try to re-download atom
+2020-05-29 11:47:59 -0500
+This is fucking bullshit!!
+2020-05-29 11:48:15 -0500
+What the fuck can't I get this back on track!!
+2020-05-29 12:19:16 -0500
+Breaking off for lunch... try to pull together today's numbers... this not being able to run ruby is killing me!!
+2020-05-29 13:29:23 -0500
+BACK IN FUCKING BUSINESS!! Did not have the runner extension downloaded... did not know I needed that!  That makes sense now though..
+2020-05-29 14:33:06 -0500
+It feels really good to have things running again and to have overcome the obstacles that were standing in my way.
+2020-05-29 14:33:23 -0500
+I am gaining confidence from these forays into coding.
+2020-05-29 14:34:11 -0500
+working on FILE reading and writing while working on das_stack.
+2020-05-29 14:37:03 -0500
+here we go
+2020-05-29 14:37:32 -0500
+
+2020-05-29 14:37:39 -0500
+this is it!
+2020-05-29 16:15:02 -0500
+I need to look at more code!!
+2020-05-30 08:12:49 -0500
+Back at it.  LEt's get a program that remembers itself.
+2020-05-30 09:33:38 -0500
+Interesting..its a Nil class... well, yeah, cause its nil!
+2020-05-30 09:34:04 -0500
+Kind of excited to run the methods method on the NilClass.
+2020-05-30 11:12:13 -0500
+Working on da_stack- still have the same issue of saving state at the end of the program run.  Beginning to see why "threads" and "state" are important.
+2020-05-30 11:12:22 -0500
+I like the nitty gritty.
+Sat May 30 16:30:58 2020
+Really good session... just logged in two really good consecutive hours. putting me at 5 and a quarter hours
+Sun May 31 07:14:01 2020
+Jus tried Atom and it wasn't running again.
+Sun May 31 07:14:54 2020
+thought I had that issue behind me.  Collected myself. Made sure that ruby was still on the computer.  Could it be a path thing.
+Sun May 31 07:15:58 2020
+Maybe its runner.  Mayber I shouldn't even work through runner as much as I do.  run my tests through command prompt and right clean sure code.

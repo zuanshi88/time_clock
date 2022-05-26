@@ -1,0 +1,3 @@
+[o:Session	:@statusF:@startIu:	TimeU“€ºz°:offsetiþ°¹:	zoneI"Central Daylight Time:EF:	@endIu;U“€Ÿ›dH
+;	iþ°¹;
+I"Central Daylight Time;F:nano_numiX:nano_deni:submicro"`:@total_timef655.2705656

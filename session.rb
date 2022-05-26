@@ -1,76 +1,27 @@
 require 'time'
 
-#05/07/2020:
 
-#File.new("in_and_out", "w")
-#File.new("time_in", "w")
+  class Session
 
-
-#class Time_Clock
-#killed the class to see what that would look like.
- #set class for time clock
-
-  #@in_and_out and @time might be able to be subbed in for file addresses...
-  #this could make the code more general. Wanted to limit contigencies so I just
-  #manually put the file names in... this could be refactored though.
-
-#@in_and_out and @time
-#@time_log is for my wholesale importing, editing and then writing procedure.
-#@total time is going to keep track of the total about studied.
-    class Session
-
-      attr_reader :database_file, :database
+      attr_reader :database_file, :database, :info, :clock_in
       attr_accessor :status 
 
-  def initialize
-    @status = true 
-    @database_file = './database/session_database.txt'
-    @database = File.open(@database_file, "rb"){|from_file| Marshal.load(from_file)} || []
-    # @accounts_index = self.index_accounts 
-    # @touch_points = create_tps  
-    # @touch_points_index = self.index_touch_points
-  end
-        # @stack = "stack.txt"
-        # @@coding_status = "session_status_coding.txt"
-        # @@code_in = "code_in.txt"
-        # @@code_total_time = "code_total_time.txt"
-        # @@code_in_and_out = "code_in_and_out.txt"
-        # @@writing_status = "session_status_writing.txt"
-        # @@write_in = "write_in.txt"
-        # @@write_total_time = "write_total_time.txt"
-        # @@write_in_and_out = "write_in_and_out.txt"
-        # @log_book = "log_book.txt"
-        # @idea_file = "ideas.txt"
-      # end
+    def initialize
+      @status = false 
+      @database_file = './database/session_database.txt'
+      @info = []
+    end
 
-      # class Activity < Session
+    def marshal_save
+        File.open(@database_file, "wb"){|f| f.write(Marshal.dump(@info))}
+    end
 
-      #   attr_reader :status_file
+    def marshal_open 
+        File.open(@database_file, "rb"){|from_file| Marshal.load(from_file)}
+    end 
+   
 
-      #   def initialize(type)
-      #     if type == "CODING"
-      #       @time_in = @@code_in
-      #       @in_and_out = @@code_in_and_out
-      #       @status_file = @@coding_status
-      #       @total_time = @@code_total_time
-      #       @type = type
-      #       @session_status = ""
-      #     elsif type == "WRITING"
-      #       @time_in = @@write_in
-      #       @in_and_out = @@write_in_and_out
-      #       @status_file = @@writing_status
-      #       @total_time = @@write_total_time
-      #       @type = type
-      #       @session_status = ""
-      #     else
-      #       puts "Something went wrong..."
-      #       main_menu
-      #     end
-      #   end
-      # end
-
-
-      def main_menu
+    def main_menu
 
         "   == = == ==== === =   === === ===== = ======= ==== === ===== === == ==== = == == \n
           == =  ===  ==== ==== ===== === ==== LOG BOOK 3 == = == == === =========== ===== \n
@@ -79,8 +30,8 @@ require 'time'
           == === == = == ========= =========== == == ==== ============= ===== === = ==== \n
          = == = == =  ======== =============== ======== = = ====== ===== == ======== ========== == \n
             === ===== == = = = ===== === ===== === == == = == ===== == === === === =="
-      end 
-      # count = 0
+    end 
+    
 
       # action = gets.to_i
 
@@ -111,7 +62,7 @@ require 'time'
       #     puts "WHat the?"
       #   end
 
-      end
+      # end
 
 #       def check_session_status
 #         read_file = File.open(@status_file, "r")
@@ -129,31 +80,36 @@ require 'time'
 #         session_file.puts @session_status
 #       end
 
-#       def clock_in
-#           #write the new log in time to the "in and out file"
-#           #now writing it so the new additions go to the top of the file using "unshift"
-#           if check_session_status
-#             puts "Current Session in Progress"
-#             return main_menu
-#           else
-#             @session_status = true
-#             record_session_status(@status_file)
-#           end
-#           time = Time.now
-#           time_in = File.write(@time_in, time)
+      def change_status 
+        @status = !@status
+      end 
 
-#           new_log = "#{@type}IN: #{time.strftime("%m/%d")} @ #{time.strftime("%H:%M")}"
-#           log_read = File.open(@in_and_out, "r")
-#           log_line_array = create_file_array(log_read)
-#           #using #unshift to enter new log at the log of the page
-#           updated_log_book = log_line_array.unshift(new_log)
-#           log_write = File.open(@in_and_out, "w")
-#           log_write.puts updated_log_book
-#           log_write.close
-#           #write clock in time to temporary "time-in file for retrievel later.
-#           puts ""
-#           puts "          #{time.strftime("%m/%d/%Y")}:  #{@type} IN  (#{time.strftime("%H:%M")})"
-#         end
+      def clock_in
+          #write the new log in time to the "in and out file"
+          #now writing it so the new additions go to the top of the file using "unshift"
+          if @status == true 
+            # puts "Current Session in Progress"
+            return main_menu
+          else
+            self.change_status
+            time_in = Time.now
+            @info << time_in
+            self.marshal_save
+          end 
+        end
+
+          # new_log = "#{@type}IN: #{time.strftime("%m/%d")} @ #{time.strftime("%H:%M")}"
+          # log_read = File.open(@in_and_out, "r")
+          # log_line_array = create_file_array(log_read)
+          # #using #unshift to enter new log at the log of the page
+          # updated_log_book = log_line_array.unshift(new_log)
+          # log_write = File.open(@in_and_out, "w")
+          # log_write.puts updated_log_book
+          # log_write.close
+          # #write clock in time to temporary "time-in file for retrievel later.
+          # puts ""
+          # puts "          #{time.strftime("%m/%d/%Y")}:  #{@type} IN  (#{time.strftime("%H:%M")})"
+        end
 
 
 #         def clock_out

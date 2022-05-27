@@ -28,5 +28,10 @@ class TimeclockTest < Test::Unit::TestCase
         assert_equal("HEY!", @time_clock.message)
     end 
 
+    def test_database_accumulating_sessions
+        number = @time_clock.database.size
+        assert_equal(1, number)
+    end 
+
 
 end 

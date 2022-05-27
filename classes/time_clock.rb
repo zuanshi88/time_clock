@@ -93,16 +93,20 @@ include Formatting
         @status = !@status
       end 
 
+
+
       def clock_in
             if !@database.empty? 
               if @database[-1].status == true 
                   self.set_message("Session in Progress")
+                  self.marshal_save
+                   @database = marshal_open
               end 
             else 
               @database << Session.new
+              self.set_message("Session Initiated")
               self.marshal_save
               @database = marshal_open
-                self.set_message("Session Initiated")
             end 
         end
 
@@ -112,14 +116,14 @@ include Formatting
                  current_session = @database.pop
                  current_session.end_session
                  @database << current_session
+                 self.set_message("Session Terminated, up to #{total} now!")
                  self.marshal_save
                  @database = marshal_open
                   total = @database.map{|session| session.total_time}.reduce(:+)
-                  self.set_message("Session Terminated, up to #{total} now!")
                   
               end 
             else 
-              self.set_message("Sorry, no session in progress")
+              set_message("Sorry, no session in progress")
             end 
         end 
 

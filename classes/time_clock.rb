@@ -10,6 +10,8 @@ include Formatting
       attr_accessor :message
 
     def initialize
+      #this call will create .txt file if it does not alread exist 
+      #allowing me to push code to github without my current txt file
       system("touch ./database/session_database.txt")
       @database_file = './database/session_database.txt'
       @message = "Welcome to your time clock"
@@ -64,22 +66,6 @@ include Formatting
 
       end
 
-#       def check_session_status
-#         read_file = File.open(@status_file, "r")
-#         session_status = read_file.gets
-#         if session_status =~ /true/
-#           return true
-#         else
-#           #this will change status on log in
-#           return false
-#         end
-#       end
-
-#       def record_session_status(status_file)
-#         session_file = File.open(status_file, "w")
-#         session_file.puts @session_status
-#       end
-
       def change_status 
         @status = !@status
       end 
@@ -115,7 +101,7 @@ include Formatting
         end 
 
         def totalize_time 
-          @database.map{|session| session.total_time}.reduce(:+).round(2) + 2248
+          @database.map{|session| session.total_time}.reduce(:+).round(2)
         end
 
 
@@ -135,9 +121,3 @@ include Formatting
           @database = marshal_open
         end 
       end
-
-         
-          # puts ""
-          # puts "          #{time.strftime("%m/%d/%Y")}:  #{@type} IN  (#{time.strftime("%H:%M")})"
-
-      

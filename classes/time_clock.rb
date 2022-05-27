@@ -96,36 +96,36 @@ include Formatting
 
 
       def clock_in
-            if !@database.empty? 
-              if @database[-1].status == true 
-                  self.set_message("Session in Progress")
-                  self.marshal_save
-                   @database = marshal_open
-              end 
-            else 
+            if @database.empty? || @database[-1].status == false
               @database << Session.new
               self.set_message("Session Initiated")
+              self.marshal_save
+              @database = marshal_open
+            else 
+              self.set_message("Session in Progress")
               self.marshal_save
               @database = marshal_open
             end 
         end
 
         def clock_out 
-            if !@database.empty? 
-              if @database[-1].status == true 
-                 current_session = @database.pop
-                 current_session.end_session
-                 @database << current_session
-                 self.set_message("Session Terminated, up to #{total} now!")
-                 self.marshal_save
-                 @database = marshal_open
-                  total = @database.map{|session| session.total_time}.reduce(:+)
-                  
-              end 
+            if @database.empty? 
+              return  self.set_message("Sorry, no session in progress")
+            end 
+            if @database[-1].status == true 
+              curr_session = @database.pop
+               curr_session.end_session
+               refresh_database(curr_session)
+              self.set_message("Session Terminated: length: #{curr_session.total_time}; total: #{totalize_time}")
+          
             else 
-              set_message("Sorry, no session in progress")
+                self.set_message("Sorry, no session in progress")
             end 
         end 
+
+        def totalize_time 
+          @database.map{|session| session.total_time}.reduce(:+).round(2)
+        end
 
 
         def clock_in_out_display
@@ -135,10 +135,15 @@ include Formatting
             self.options
         end 
 
+        def refresh_database(curr_session) 
+          @database << curr_session
+          self.marshal_save
+          @database = marshal_open
+        end 
+      end
+
          
           # puts ""
           # puts "          #{time.strftime("%m/%d/%Y")}:  #{@type} IN  (#{time.strftime("%H:%M")})"
-        end
 
-
-#        
+      

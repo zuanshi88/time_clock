@@ -30,7 +30,7 @@ class TimeclockTest < Test::Unit::TestCase
 
     def test_database_accumulating_sessions
         number = @time_clock.database.size
-        assert_equal(1, number)
+        assert_operator(1, :<, number)
     end 
 
 

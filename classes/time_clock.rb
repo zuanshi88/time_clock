@@ -12,7 +12,14 @@ include Formatting
     def initialize
       @database_file = './database/session_database.txt'
       @message = "Welcome to your time clock"
-      @database = marshal_open
+      begin
+        @database = marshal_open
+      rescue => exception 
+        #this code is to keep app from blowing up on first use
+        @database = []
+        self.marshal_save 
+        @database = marshal_open
+      end 
     end
 
     def set_message(mess) 
@@ -31,9 +38,9 @@ include Formatting
     def main_menu
                               
          ["== = == ==== === =   === === ===== = ======= ==== === ===== === == ==== = == == ",
-          " == =  ===  ==== ==== ===== === #{@message} == = == == === =========== ===== ",
+          " == =  == #{@message}    = == === =========== ===== ",
          " == === == = ===  ==  ===== == ======= === ==== == ===== ========= ===== ===== ======= =",
-        " IN (3) | OUT (4) | WRITE-IN (6) | WRITE-OUT (7) | LOG (8) | STACK (9) | IDEAS (0) | EXIT (1) ",
+        "                          IN (3) | OUT (4) | EXIT (other)                                   ",
           " == === == = == ========= =========== == == ==== ============= ===== === = ==== ",
          " = == = == =  ======== =============== ======== = = ====== ===== == ======== ========== == ",
            "  === ===== == = = = ===== === ===== === == == = == ===== == === === === =="]
@@ -50,25 +57,10 @@ include Formatting
         when 4
            clock_out
            clock_in_out_display
-        when 5
-          coding_session = Activity.new("CODING")
-          coding_session.clock_out
-        when 6
-          writing_session = Activity.new("WRITING")
-          writing_session.clock_in
-        when 7
-          writing_session = Activity.new("WRITING")
-          writing_session.clock_out
-        when 8
-          log(log_book)
-        when 9
-          stack()
-        when 0
-          ideas()
-        when 1
-          exit
         else
-          puts "WHat the?"
+          self.set_message("See ya, homie!")
+          clock_in_out_display(true)
+         exit
         end
 
       end
@@ -116,7 +108,7 @@ include Formatting
               curr_session = @database.pop
                curr_session.end_session
                refresh_database(curr_session)
-              self.set_message("Session Terminated: length: #{curr_session.total_time}; total: #{totalize_time}")
+              self.set_message("Began: #{curr_session.start.strftime("%H:%M")} / Terminated: #{curr_session.end.strftime("%H:%M")} length: #{curr_session.total_time}; total: #{totalize_time}")
           
             else 
                 self.set_message("Sorry, no session in progress")
@@ -124,14 +116,17 @@ include Formatting
         end 
 
         def totalize_time 
-          @database.map{|session| session.total_time}.reduce(:+).round(2)
+          @database.map{|session| session.total_time}.reduce(:+).round(2) + 2248
         end
 
 
-        def clock_in_out_display
+        def clock_in_out_display(terminate = false)
             system('clear')
             drop_center
             self.main_menu.each{|line| center_text(line)}
+            if terminate
+              exit
+            end 
             self.options
         end 
 

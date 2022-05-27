@@ -8,7 +8,7 @@ class IntegrationTest < Test::Unit::TestCase
     def setup 
         @session = Session.new
         @time_clock = Time_Clock.new
-        @time_clock.database.clear
+        # @time_clock.database.clear
     end 
 
 
@@ -34,7 +34,7 @@ class IntegrationTest < Test::Unit::TestCase
     def test_can_clock_out
         @time_clock.clock_in
         @time_clock.clock_out
-        assert_equal("Session Terminated", @time_clock.message[0..17])
+        assert_equal("Began:", @time_clock.message[0..5])
     end 
 
     def test_can_determine_no_session_in_progress 

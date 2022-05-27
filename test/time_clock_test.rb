@@ -1,4 +1,4 @@
-require './classes/session.rb'
+# require './classes/session.rb'
 require './classes/time_clock.rb'
 
 require 'test/unit'

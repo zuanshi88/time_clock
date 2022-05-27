@@ -3,11 +3,6 @@ require "./modules/formatting_module.rb"
 
 include Formatting
 
-
-
-
-
-
 app = Time_Clock.new
 
 system('clear')

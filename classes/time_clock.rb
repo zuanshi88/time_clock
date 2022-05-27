@@ -59,7 +59,7 @@ include Formatting
            clock_out
            clock_in_out_display
         else
-          self.set_message("See ya, homie!")
+          self.set_message("That's a wrap!")
           clock_in_out_display(true)
          exit
         end

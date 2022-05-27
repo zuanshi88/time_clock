@@ -1,0 +1,4 @@
+[o:Session	:@statusF:@startIu:	Timet“€affb
+:nano_numiX:nano_deni:submicro"`:offsetiş°¹:	zoneI"Central Daylight Time:EF:	@endIu;t“€\b
+;	i,;
+i;"0;iş°¹;I"Central Daylight Time;F:@total_timef	0.01
